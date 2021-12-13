@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+{%block body_block%}
+<div class="container"><br><br><br>
+  <!-- HACK:  -->
+  <h1>Python Exam Test</h1>
+  <h2>Rules:</h2>
+  <ul >
+    <li>Time for exam is 30 min</li>
+    <li>Each que' takes only one minute</li>
+    <li>After one minute ,computer jmps to next que`</li>
+  </ul>
+  <form  method="post">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="" placeholder="" required>
+<input type="submit" name="" value="next page">
+
+  </form>
+</div>
+{%endblock%}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%} 
+{%block body_block%}<br><br><br><br>
+<h1>Welocme to "Test Your Knowledge"</h1>
+<form  method="post" id="target">
+  {{form.as_p}}
+  {%csrf_token%}
+  <input type="submit"class="btn btn-primary" name="" value="Signup">
+
+</form>
+<script type="text/javascript">
+  $('#target').submit(function(event) {
+    alert("you signuped successfully")
+  })
+</script>
+{%endblock%}
